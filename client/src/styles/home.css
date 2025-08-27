@@ -1,0 +1,32 @@
+.home-main {
+  background-image: url("../assets/img/noise.png");
+  height: calc(100vh - 3.5rem);
+  position: relative;
+}
+
+.circle {
+  position: absolute;
+  top: -10%;
+  right: 0.1rem;
+  box-shadow: 0px 0px 1000px 120px orange;
+}
+
+.home {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid red;
+}
+
+.home .left {
+  width: 50%;
+  height: 100%;
+  border: 2px solid green;
+}
+
+.home .right {
+  width: 50%;
+  height: 100%;
+  border: 2px solid blue;
+}
