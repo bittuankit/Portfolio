@@ -1,6 +1,5 @@
-import "./styles/utils.css";
-import { BrowserRouter, Router, Route, Routes } from "react-router";
-import { lazy, Suspense } from "react";
+import { BrowserRouter, Route, Routes } from "react-router";
+import { Suspense } from "react";
 import Loading from "./components/loading";
 import Home from "./pages/Home";
 import About from "./pages/About";
