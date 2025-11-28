@@ -1,0 +1,103 @@
+.navbar {
+  position: fixed;
+  border: 1px solid #ffffff55;
+  background: #ffffff33;
+  margin: 10px;
+  padding: 0.4rem;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 0.5rem;
+}
+
+.navbar .nav-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-items .nav-item {
+  margin: 0 2rem;
+  list-style: none;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.nav-items a {
+  color: white;
+  text-decoration: none;
+  text-shadow: 0 0 3px #000000aa;
+}
+
+/* side-navbar */
+
+.side-nav {
+  width: 30%;
+  position: fixed;
+  line-height: 2.5rem;
+  flex-direction: column;
+}
+
+.side-nav .side-nav-item {
+  list-style: none;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.side-nav-item a {
+  color: white;
+  text-decoration: none;
+  text-shadow: 0 0 3px #000000aa;
+  margin: 0 0.5rem;
+}
+
+.burger-icon {
+  display: none;
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+}
+
+.burger-icon i {
+  display: none;
+}
+
+.close-icon {
+  display: none;
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+}
+
+/* media query */
+
+@media (max-width: 768px) {
+  .navbar {
+    display: none;
+  }
+
+  .burger-icon {
+    display: block;
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+  }
+
+  .close-icon {
+    display: block;
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+  }
+}
