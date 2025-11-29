@@ -50,13 +50,19 @@ const Header = () => {
         style={
           isSideNavOpen
             ? {
-                position: "relative",
+                position: "absolute",
+                top: "50%",
                 left: "0%",
-                width: "100%",
-                height: "100%",
-                background: "#00000038",
+                transform: "translateY(-50%)",
+                transition: "0.3s ease-in-out",
               }
-            : { position: "relative", left: "-100%" }
+            : {
+                position: "absolute",
+                left: "-100%",
+                top: "50%",
+                transform: "translateY(-50%)",
+                transition: "0.3s ease-in-out",
+              }
         }
       >
         <ul className="side-nav-items">

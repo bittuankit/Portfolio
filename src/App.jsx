@@ -1,9 +1,12 @@
+import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 
 const App = () => {
   return (
-    <main className="box-bg">
+    <main>
+      <div className="box-bg"></div>
       <Navbar />
+      <Hero />
     </main>
   );
 };

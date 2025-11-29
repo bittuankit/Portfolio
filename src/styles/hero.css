@@ -1,0 +1,283 @@
+.hero {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero img {
+  width: 400px;
+  position: absolute;
+  left: 55%;
+  top: 50%;
+  transform: translate(0%, -50%);
+}
+.hero .left {
+  position: absolute;
+  left: 10%;
+  top: 38%;
+  transform: translate(0%, -50%);
+  font-size: 3rem;
+}
+
+.hero h3 {
+  position: absolute;
+  left: 9%;
+  bottom: 85%;
+  font-size: 1rem;
+  color: white;
+  font-family: "Playwrite NO", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.hero h3 span {
+  color: black;
+  font-weight: 600;
+}
+
+.hero .left h1 {
+  color: white;
+  font-weight: 700;
+  font-size: 7.5rem;
+  text-transform: uppercase;
+  line-height: 5rem;
+}
+
+.hero .left .firstname {
+  color: var(--secondary-color);
+}
+
+.hero .left .lastname {
+  position: relative;
+  margin-left: 20%;
+}
+
+.hero .left .lastname p {
+  position: absolute;
+  right: -25%;
+  font-size: 1.8rem;
+}
+
+.hero .left .lastname p span {
+  background-color: var(--secondary-color);
+  color: var(--main-color);
+  padding: 0.3rem 0.7rem 0.3rem 0.5rem;
+  font-style: italic;
+  text-transform: capitalize;
+}
+
+.hero .btn-cv {
+  position: absolute;
+  bottom: 15%;
+  left: 10%;
+  border: 2px solid var(--secondary-color);
+  background: transparent;
+  padding: 0.7rem;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+  border-radius: 3rem;
+  cursor: pointer;
+}
+
+.hero .btn-hire {
+  position: absolute;
+  bottom: 15%;
+  left: 23%;
+  border: 2px solid var(--secondary-color);
+  background: var(--secondary-color);
+  padding: 0.6rem 0.7rem;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+  border-radius: 3rem;
+  text-decoration: none;
+  color: #fff;
+}
+
+.hero .btn-hire:hover {
+  background: transparent;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+}
+
+.hero .right {
+  position: absolute;
+  left: 80%;
+  bottom: 0%;
+  transform: translate(0%, -50%);
+}
+
+.hero .right .icons {
+  font-size: 2rem;
+  display: flex;
+  gap: 1.5rem;
+  cursor: pointer;
+  color: var(--main-color);
+}
+
+.hero .right .icons a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.hero .right .icons a:hover {
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+
+/* media-query */
+
+@media screen and (max-width: 1024px) {
+  .hero {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero img {
+    width: 300px;
+    top: 35%;
+    left: 55%;
+  }
+
+  .hero .left h1 {
+    font-size: 6rem;
+  }
+  .hero .left .lastname p,
+  .hero .left .lastname p span {
+    font-size: 1.5rem;
+  }
+
+  .hero .btn-cv {
+    left: 15%;
+    font-size: 1rem;
+  }
+
+  .hero .btn-hire {
+    left: 32%;
+    font-size: 1rem;
+  }
+
+  .hero .right {
+    position: absolute;
+    left: 80%;
+    bottom: 0%;
+    transform: translate(0%, -50%);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero img {
+    width: 270px;
+    left: 20%;
+    top: 25%;
+  }
+
+  .hero .left {
+    left: 40%;
+    top: 60%;
+    transform: translate(0%, -50%);
+  }
+
+  .hero .left .firstname {
+    color: var(--main-color);
+  }
+
+  .hero .left .lastname p span {
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+    padding: 0.3rem 0.7rem 0.3rem 0.5rem;
+    font-style: italic;
+    text-transform: capitalize;
+  }
+
+  .hero .btn-cv {
+    left: 5%;
+    font-size: 0.8rem;
+  }
+  .hero .btn-hire {
+    left: 23%;
+    font-size: 0.8rem;
+  }
+
+  .hero .right .icons {
+    font-size: 1.5rem;
+    gap: 1rem;
+    cursor: pointer;
+    color: var(--main-color);
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .hero {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero img {
+    width: 200px;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%, 0%);
+  }
+
+  .hero .left {
+    position: absolute;
+    left: 45%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .hero .left h1 {
+    font-size: 4.5rem;
+    line-height: 3.5rem;
+  }
+
+  .hero .left .lastname p,
+  .hero .left .lastname p span {
+    font-size: 1.2rem;
+  }
+
+  .hero .btn-cv {
+    left: 25%;
+    font-size: 0.8rem;
+  }
+  .hero .btn-hire {
+    left: 60%;
+    font-size: 0.8rem;
+  }
+
+  .hero .right {
+    width: 100vw;
+    left: 0%;
+  }
+
+  .hero .right .icons {
+    font-size: 1.5rem;
+    gap: 1rem;
+    cursor: pointer;
+    color: var(--main-color);
+    justify-self: center;
+    border-bottom: 1px solid var(--main-color);
+  }
+}
