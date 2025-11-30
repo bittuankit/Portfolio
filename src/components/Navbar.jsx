@@ -28,7 +28,15 @@ const Header = () => {
     gsap.fromTo(
       ".nav-item",
       { y: -50, opacity: 0 },
-      { y: 0, opacity: 1, stagger: 0.1 }
+      {
+        y: 0,
+        opacity: 1,
+        stagger: {
+          each: 0.2,
+          from: "random",
+        },
+        delay: 0.7,
+      }
     );
   });
 

@@ -66,7 +66,6 @@
   color: var(--main-color);
   padding: 0.3rem 0.7rem 0.3rem 0.5rem;
   font-style: italic;
-  text-transform: capitalize;
 }
 
 .hero .btn-cv {
@@ -81,6 +80,27 @@
   font-weight: 500;
   border-radius: 3rem;
   cursor: pointer;
+  z-index: 1;
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+}
+
+.hero .btn-cv::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: var(--secondary-color);
+  border-radius: 3rem;
+  z-index: -1;
+  transition: 0.3s ease-in-out;
+}
+
+.hero .btn-cv:hover::before {
+  width: 100%;
+  background: var(--secondary-color);
 }
 
 .hero .btn-hire {
