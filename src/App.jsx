@@ -1,3 +1,4 @@
+import About from "./components/About";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 
@@ -7,6 +8,7 @@ const App = () => {
       <div className="box-bg"></div>
       <Navbar />
       <Hero />
+      <About />
     </main>
   );
 };

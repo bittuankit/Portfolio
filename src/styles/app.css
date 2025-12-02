@@ -1,5 +1,6 @@
 @import url("./navbar.css");
 @import url("./hero.css");
+@import url("./about.css");
 
 @import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
@@ -22,7 +23,7 @@
 }
 
 body {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   font-family: "Ubuntu", sans-serif;
   font-weight: 300;
