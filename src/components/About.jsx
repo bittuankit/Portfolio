@@ -1,8 +1,37 @@
 import { useRef } from "react";
 import { AboutMe } from "../../constants";
 import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { SplitText } from "gsap/SplitText";
+
+gsap.registerPlugin(SplitText);
+let animation;
 
 const About = () => {
+  useGSAP(() => {
+    const aboutMe = new SplitText(".content p", { type: "chars, words" });
+    const aboutMe2 = new SplitText(".overlay p", { type: "chars, words" });
+
+    animation && animation.revert();
+    animation = gsap.from(aboutMe.words, {
+      y: -100,
+      opacity: 0,
+      rotation: "random(-80, 80)",
+      duration: 0.7,
+      ease: "back",
+      stagger: 0.15,
+    });
+
+    animation = gsap.from(aboutMe2.words, {
+      y: -100,
+      opacity: 0,
+      rotation: "random(-80, 80)",
+      duration: 0.7,
+      ease: "back",
+      stagger: 0.15,
+    });
+  });
+
   const overlayRef = useRef(null);
 
   const handleMouseMove = (e) => {
